@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora IMC</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <main>
+        <section class="container">
+            <h1 class="containerTitulo">Calculadora de IMC</h1>
+            <p class="containerTexo">Coloque os seus dados na calculadora e calcule o seu IMC:</p>
+
+            <h2 class="containerSubTitulo">Qual a sua Idade:</h2>
+            <input type="number" id="containerIdade" step="0.01" name="containerIdade" placeholder="Informe a sua Idade" min="1" max="100">
+            
+            <h2 class="containerSubTitulo">Qual sua Altura:</h2>
+            <input type="number" id="containerAltura" step="0.01" name="containerAltura" placeholder="Informe a sua Altura" min="1" max="100">
+
+            <h2 class="containerSubTitulo">Qual o seu peso:</h2>
+            <input type="number" id="containerPeso" step="0.01" name="containerPeso" placeholder="Informe o seu Peso" min="1" max="100">
+
+            <input type="button" onclick="calcular()" value="Calcular" id="calcular">
+
+        </section>
+        <section class="container containerResultado">
+            <h2 class="containerSubTitulo">Resultado:</h2>
+            <p class="resultado"></p>
+            <img src="https://emagreceja.com.br/wp-content/uploads/2023/03/tabela-imc.png" alt="tabela imc" width="450px">
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
