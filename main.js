@@ -2,6 +2,7 @@
 
 function revelar() {
     document.querySelector(".containerResultado").style.display = "block"
+    window.scroll(0, 1000)
 }
 
 function calcular() {
